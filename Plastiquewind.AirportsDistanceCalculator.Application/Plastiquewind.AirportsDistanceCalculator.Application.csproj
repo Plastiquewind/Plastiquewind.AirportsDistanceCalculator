@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.2.0" />
+    <PackageReference Include="Flurl.Http" Version="2.4.2" />
+    <PackageReference Include="GeoCoordinate.NetStandard1" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Plastiquewind.AirportsDistanceCalculator.Application.Contracts\Plastiquewind.AirportsDistanceCalculator.Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

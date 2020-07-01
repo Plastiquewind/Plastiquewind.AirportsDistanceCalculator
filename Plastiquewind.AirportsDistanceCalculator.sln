@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plastiquewind.AirportsDistanceCalculator.Web", "Plastiquewind.AirportsDistanceCalculator.Web\Plastiquewind.AirportsDistanceCalculator.Web.csproj", "{649433DE-69A1-4106-A6E9-37777FF31597}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plastiquewind.AirportsDistanceCalculator.Application", "Plastiquewind.AirportsDistanceCalculator.Application\Plastiquewind.AirportsDistanceCalculator.Application.csproj", "{60A6489C-DBD8-47F1-83B2-FEAB1FB1666C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plastiquewind.AirportsDistanceCalculator.Application.Contracts", "Plastiquewind.AirportsDistanceCalculator.Application.Contracts\Plastiquewind.AirportsDistanceCalculator.Application.Contracts.csproj", "{E149C90D-2C93-4428-A7DD-3B193FFA3BB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plastiquewind.AirportsDistanceCalculator.Shared", "Plastiquewind.AirportsDistanceCalculator.Shared\Plastiquewind.AirportsDistanceCalculator.Shared.csproj", "{83DFC8CA-A062-4BF7-BCD0-28D8F464F0FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{649433DE-69A1-4106-A6E9-37777FF31597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{649433DE-69A1-4106-A6E9-37777FF31597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{649433DE-69A1-4106-A6E9-37777FF31597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{649433DE-69A1-4106-A6E9-37777FF31597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60A6489C-DBD8-47F1-83B2-FEAB1FB1666C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60A6489C-DBD8-47F1-83B2-FEAB1FB1666C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60A6489C-DBD8-47F1-83B2-FEAB1FB1666C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60A6489C-DBD8-47F1-83B2-FEAB1FB1666C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E149C90D-2C93-4428-A7DD-3B193FFA3BB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E149C90D-2C93-4428-A7DD-3B193FFA3BB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E149C90D-2C93-4428-A7DD-3B193FFA3BB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E149C90D-2C93-4428-A7DD-3B193FFA3BB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83DFC8CA-A062-4BF7-BCD0-28D8F464F0FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83DFC8CA-A062-4BF7-BCD0-28D8F464F0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83DFC8CA-A062-4BF7-BCD0-28D8F464F0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83DFC8CA-A062-4BF7-BCD0-28D8F464F0FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AFDC8C0-3FCD-4CFD-8912-C9209B20C887}
+	EndGlobalSection
+EndGlobal
