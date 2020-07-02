@@ -5,11 +5,17 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plastiquewind.AirportsDistanceCalculator.Web", "Plastiquewind.AirportsDistanceCalculator.Web\Plastiquewind.AirportsDistanceCalculator.Web.csproj", "{649433DE-69A1-4106-A6E9-37777FF31597}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plastiquewind.AirportsDistanceCalculator.Application", "Plastiquewind.AirportsDistanceCalculator.Application\Plastiquewind.AirportsDistanceCalculator.Application.csproj", "{60A6489C-DBD8-47F1-83B2-FEAB1FB1666C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plastiquewind.AirportsDistanceCalculator.Application", "Plastiquewind.AirportsDistanceCalculator.Application\Plastiquewind.AirportsDistanceCalculator.Application.csproj", "{60A6489C-DBD8-47F1-83B2-FEAB1FB1666C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plastiquewind.AirportsDistanceCalculator.Application.Contracts", "Plastiquewind.AirportsDistanceCalculator.Application.Contracts\Plastiquewind.AirportsDistanceCalculator.Application.Contracts.csproj", "{E149C90D-2C93-4428-A7DD-3B193FFA3BB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plastiquewind.AirportsDistanceCalculator.Application.Contracts", "Plastiquewind.AirportsDistanceCalculator.Application.Contracts\Plastiquewind.AirportsDistanceCalculator.Application.Contracts.csproj", "{E149C90D-2C93-4428-A7DD-3B193FFA3BB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plastiquewind.AirportsDistanceCalculator.Shared", "Plastiquewind.AirportsDistanceCalculator.Shared\Plastiquewind.AirportsDistanceCalculator.Shared.csproj", "{83DFC8CA-A062-4BF7-BCD0-28D8F464F0FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plastiquewind.AirportsDistanceCalculator.Shared", "Plastiquewind.AirportsDistanceCalculator.Shared\Plastiquewind.AirportsDistanceCalculator.Shared.csproj", "{83DFC8CA-A062-4BF7-BCD0-28D8F464F0FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plastiquewind.AirportsDistanceCalculator.Application.UnitTests", "Plastiquewind.AirportsDistanceCalculator.Application.UnitTests\Plastiquewind.AirportsDistanceCalculator.Application.UnitTests.csproj", "{027F55CF-03AD-4F1A-8264-9E4614515661}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1AECBCEC-D235-4EEE-9490-11C4F592D268}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B5517AA7-CEE9-4D85-BE3F-3A9A02099FBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +39,20 @@ Global
 		{83DFC8CA-A062-4BF7-BCD0-28D8F464F0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83DFC8CA-A062-4BF7-BCD0-28D8F464F0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83DFC8CA-A062-4BF7-BCD0-28D8F464F0FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{027F55CF-03AD-4F1A-8264-9E4614515661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{027F55CF-03AD-4F1A-8264-9E4614515661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{027F55CF-03AD-4F1A-8264-9E4614515661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{027F55CF-03AD-4F1A-8264-9E4614515661}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{649433DE-69A1-4106-A6E9-37777FF31597} = {B5517AA7-CEE9-4D85-BE3F-3A9A02099FBF}
+		{60A6489C-DBD8-47F1-83B2-FEAB1FB1666C} = {B5517AA7-CEE9-4D85-BE3F-3A9A02099FBF}
+		{E149C90D-2C93-4428-A7DD-3B193FFA3BB3} = {B5517AA7-CEE9-4D85-BE3F-3A9A02099FBF}
+		{83DFC8CA-A062-4BF7-BCD0-28D8F464F0FA} = {B5517AA7-CEE9-4D85-BE3F-3A9A02099FBF}
+		{027F55CF-03AD-4F1A-8264-9E4614515661} = {1AECBCEC-D235-4EEE-9490-11C4F592D268}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1AFDC8C0-3FCD-4CFD-8912-C9209B20C887}
