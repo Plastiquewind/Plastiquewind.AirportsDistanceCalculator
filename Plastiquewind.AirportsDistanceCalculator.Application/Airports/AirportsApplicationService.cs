@@ -16,9 +16,15 @@ namespace Plastiquewind.AirportsDistanceCalculator.Application.Airports
 {
     internal sealed class AirportsApplicationService : IAirportsApplicationService
     {
+        #region Fields
+
         private readonly Uri airportDetailsApiUrl;
         private readonly IFlurlClient flurlClient;
         private readonly IIndex<DistanceUnit, IMetersConverterApplicationService> converterServices;
+
+        #endregion
+
+        #region Constructors
 
         public AirportsApplicationService(IApplicationModuleSettings applicationModuleSettings,
             IFlurlClientFactory flurlClientFactory,
@@ -29,6 +35,10 @@ namespace Plastiquewind.AirportsDistanceCalculator.Application.Airports
             this.flurlClient = (flurlClientFactory ?? throw new ArgumentNullException(nameof(flurlClient))).Get(this.airportDetailsApiUrl);
             this.converterServices = converterServices;
         }
+
+        #endregion
+
+        #region Public methods
 
         public async Task<double> CalculateDistanceAsync(string firstIataCode, string secondIataCode,
             DistanceUnit distanceUnit = default,
@@ -48,6 +58,10 @@ namespace Plastiquewind.AirportsDistanceCalculator.Application.Airports
 
             return CalculateDistance(firstAirport.Location, secondAirport.Location, distanceUnit);
         }
+
+        #endregion
+
+        #region Private methods
 
         private double CalculateDistance(LocationDto firstAirportLocation, LocationDto secondAirportLocation, DistanceUnit distanceUnit)
         {
@@ -73,5 +87,7 @@ namespace Plastiquewind.AirportsDistanceCalculator.Application.Airports
 
             return (airports[0], airports[1]);
         }
+
+        #endregion
     }
 }
