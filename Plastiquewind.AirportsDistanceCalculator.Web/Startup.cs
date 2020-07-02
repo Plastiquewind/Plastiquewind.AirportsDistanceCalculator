@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 
 namespace Plastiquewind.AirportsDistanceCalculator
 {
@@ -29,8 +30,10 @@ namespace Plastiquewind.AirportsDistanceCalculator
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSwaggerGen();
         }
 
+        // Autofac modules registration
         public void ConfigureContainer(ContainerBuilder builder)
         {
             builder.RegisterModule(new ApplicationModule(new ApplicationModuleSettings
@@ -48,6 +51,17 @@ namespace Plastiquewind.AirportsDistanceCalculator
             }
 
             app.UseMiddleware(typeof(ErrorHandlingMiddleware));
+
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Airports distance calculator API");
+                c.RoutePrefix = string.Empty;
+            });
 
             app.UseRouting();
 
